@@ -18,6 +18,18 @@ const useStyle = makeStyles((theme) => ({
         '& .MuiButton-root': {
             width: "150px",
             textTransform: "none"
+        },
+        '& .MuiFormLabel-root': {
+            fontSize: "0.9em"
+        },
+        '& .MuiInputBase-input': {
+            fontSize: "0.8em"
+        },
+        '& .MuiSvgIcon-root': {
+            fontSize: "0.8em"
+        },
+        '& .MuiFormControlLabel-label': {
+            fontSize: "0.8em"
         }
     },
 
