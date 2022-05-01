@@ -50,7 +50,7 @@ table {
          url('../public/fonts/vazir/Vazir-Light.ttf') format('truetype');
 }
 *{
-	font-family:Vazir-Light !important;
+	font-family:"tahoma",Vazir-Light;
 }
 body {
   

@@ -65,8 +65,10 @@ const Create = () => {
             priority: todo.priority,
             completed: false
         }
-        axios.post('http://localhost:4000/', newTodo)
-            .then(res => console.log(res))
+        axios.post('http://localhost:4000/todo/createTodo', newTodo)
+            .then(function (res) {
+                console.log(res.data)
+            })
     }
     return (
         <div className={classes.root}>

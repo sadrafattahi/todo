@@ -13,16 +13,19 @@ import { Link } from "react-router-dom";
 import DrawerComponent from "../Drawer/Drawer";
 
 const useStyles = makeStyles((theme) => ({
+    AppBar: {
+        backgroundColor: "#eeeeee"
+    },
     navlinks: {
         marginLeft: theme.spacing(10),
         display: "flex",
         '& a': {
             textDecoration: "none",
-            color: "white",
-            fontSize: "20px",
+            fontSize: "18px",
+            color: "#212121",
             marginLeft: theme.spacing(2),
             "&:hover": {
-                color: "yellow",
+                color: "#757575",
             },
         }
     },
@@ -40,10 +43,9 @@ function Navbar() {
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const isSmall = useMediaQuery(theme.breakpoints.down("xs"))
     return (
-        <AppBar position="static">
-            <CssBaseline />
+        <AppBar color="transparent" elevation={0} position="static" className={classes.AppBar}>
             <Toolbar>
-                <Typography variant={isSmall ? "h6" : "h4"} className={classes.logo}>
+                <Typography variant={isSmall ? "h7" : "h6"} className={classes.logo}>
                     MERN-Stack ToDo App
                 </Typography>
                 {isMobile ? (

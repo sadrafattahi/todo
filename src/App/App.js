@@ -36,11 +36,11 @@ const App = () => {
     <Container className={classes.container}>
       <Router>
         <Navbar />
-        <div style={{ "padding": "10px" }}>
+        <Container style={{ "paddingTop": "30px" }}>
           <Route exact path="/" component={Todos} />
           <Route path="/edit/:id" component={Edit} />
           <Route path="/create" component={Create} />
-        </div>
+        </Container>
       </Router>
     </Container >
   );

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     icon: {
-        color: "white"
+        color: "black"
     }
 
 }));
