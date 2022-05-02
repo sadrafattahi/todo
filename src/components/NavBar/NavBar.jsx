@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     logo: {
         cursor: "pointer",
-        [theme.breakpoints.down("xs")]: {
+        [theme.breakpoints.down("sm")]: {
             flexGrow: "1",
         }
     },
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 function Navbar() {
     const classes = useStyles();
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     const isSmall = useMediaQuery(theme.breakpoints.down("xs"))
     return (
         <AppBar color="transparent" elevation={0} position="static" className={classes.AppBar}>

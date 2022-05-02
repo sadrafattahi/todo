@@ -6,6 +6,7 @@ import { useState } from "react";
 const useStyle = makeStyles((theme) => ({
     root: {
         '& .MuiTypography-h6': {
+            fontSize: "1em",
             fontWeight: "600"
         }
     },
@@ -65,7 +66,7 @@ const Create = () => {
             priority: todo.priority,
             completed: false
         }
-        axios.post('http://localhost:4000/todo/createTodo', newTodo)
+        axios.post('http://172.24.143.19:4000/todo/createTodo', newTodo)
             .then(function (res) {
                 console.log(res.data)
             })
